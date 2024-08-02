@@ -7,7 +7,7 @@ const port = process.env.PORT || 3001;
 
 app.use(
   cors({
-    origin: process.env.REACT_APP_CLIENT_URL, // Replace with your React app's URL
+    origin: "*", // Replace with your React app's URL
   })
 );
 app.use(bodyParser.json());
